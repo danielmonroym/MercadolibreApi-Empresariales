@@ -1,0 +1,48 @@
+.search-bar {
+ 
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+  }
+  
+  .input-bar {
+    width: 115%;
+  }
+
+  .example-card {
+    max-width: 400px;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  button{
+    margin-left: 1%;
+    margin-top: 3%;
+  }
+  .content { 
+    padding: 16px; 
+  }
+  
+  .content > mat-card { 
+    width: 200px; 
+  }
+
+  img{
+      height: 250px;
+      width: 250px;
+      margin-left: 10px;
+  }
+
+  @media (max-width: 600px) {
+   
+    button{
+        width: 45%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+  }
