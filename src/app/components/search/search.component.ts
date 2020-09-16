@@ -65,7 +65,9 @@ export class SearchComponent implements OnInit {
   }
   prevPage() {
     this.offset = this.offset - 50;
-
+    if (this.offset < 1000) {
+      this.disabledNext = false;
+    }
     console.log(this.offset);
     this.pages = this.pages - 1;
     if (this.pages == 0) {

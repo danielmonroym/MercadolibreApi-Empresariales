@@ -18,6 +18,8 @@ import {MatTableModule} from '@angular/material/table';
 import { JwPaginationModule } from 'jw-angular-pagination';
 import { ItemdetailsComponent } from './components/itemdetails/itemdetails.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,11 @@ import {MatGridListModule} from '@angular/material/grid-list';
    MatPaginatorModule,
    MatTableModule,
    JwPaginationModule,
-   MatGridListModule
+   MatGridListModule,
+   MatProgressSpinnerModule
+
+
+
    
   ],
   providers: [],

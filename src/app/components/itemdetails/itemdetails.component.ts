@@ -14,8 +14,7 @@ import { Location } from '@angular/common';
 export class ItemdetailsComponent implements OnInit {
   id: string;
   itemdetail: ItemDetails;
-  img: Imgs[];
-  
+  img: any[];
   constructor(private route: ActivatedRoute, private itemService: ItemsService, private location: Location) { }
 
   ngOnInit(): void {
@@ -29,13 +28,20 @@ export class ItemdetailsComponent implements OnInit {
       console.log(data);
       this.itemdetail = data;
       this.img=data.pictures;
+      if(this.img.length>8){
+        this.img.length=this.img.length/8;
+      }
+      
       console.log(this.img);
       console.log(data.pictures);
-      console.log(this.itemdetail);
+      
+     
   });
- 
+  
+
 }
+
 cancel() {
-  this.location.back(); // <-- go back to previous location on cancel
+  this.location.back();
 }
 }
