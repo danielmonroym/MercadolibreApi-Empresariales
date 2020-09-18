@@ -31,6 +31,7 @@ export class SearchComponent implements OnInit {
     this.items = [];
     this.pages = 0;
     this.offset = 0;
+    console.log(this.search);
     this.itemService.getItems(this.search).subscribe((data) => {
       console.log(data);
       this.items = data.results;
